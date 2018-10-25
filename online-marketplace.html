@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Online Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Online Marketplace</h1>
+      <form id="marketplace">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input id="address" class="form-control" type="text">
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="product" value="apples" checked>
+            apples
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="product" value="bananas">
+            bananas
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="product" value="strawberries">
+            strawberries
+          </label>
+        </div>
+        <button type="submit" name="btn">Submit!</button>
+      </form>
+      <div id="confirmation">
+        <p>Thank you for purchasing <span class="radio"></span> <span class="name"></span>. Your shipping order will arrive on <span class="address"></span>.</p>
+      </div>
+    </div>
+  </body>
+</html>
